@@ -12,22 +12,7 @@ const validEmail = val => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val);
 class Contact extends Component {
     constructor(props){
         super(props);
-        this.state = {
-            firstName: '',
-            lastName: '',
-            phoneNum: '',
-            email: '',
-            agree: false,
-            contactType: 'By Phone',
-            feedback: '',
-            touched: {
-                firstName: false,
-                lastName: false,
-                phoneNum: false,
-                email: false
-            }
-        };
-
+    
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
